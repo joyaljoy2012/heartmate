@@ -82,14 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 .then(response => response.json())
                 .then(data => {
                     alert("Thank you! Your request has been sent directly to our team.");
-                    console.log(data);
-
                     contactForm.reset();
                     submitBtn.textContent = originalBtnText;
                     submitBtn.disabled = false;
                 })
                 .catch(error => {
-                    console.log(error);
                     alert("Oops! There was a problem sending your request.");
                     submitBtn.textContent = originalBtnText;
                     submitBtn.disabled = false;
