@@ -1,0 +1,12 @@
+{
+  "name": "heartmate-website",
+  "version": "1.0.0",
+  "description": "Static website for Heartmate Limited",
+  "scripts": {
+    "build:css": "sass scss:css",
+    "watch:css": "sass --watch scss:css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}
